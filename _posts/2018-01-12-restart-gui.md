@@ -3,7 +3,7 @@ layout: post
 title:  "Restart Home Assistant from GUI"
 author: skalavala
 categories: [ homeassistant, sudoer ]
-image: assets/images/5.jpg
+image: assets/images/restart-ha-gui.jpg
 ---
 
 Looking for a way to restart and upgrade Home Assistant using just the GUI? Follow two simple steps, and you are all set!
