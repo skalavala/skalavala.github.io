@@ -8,6 +8,8 @@ featured: true
 hidden: true
 ---
 
+Do you want to convert your old web camera as a smart surveillance Camera? Learn how you can connect your old webcam to Raspberry Pi and make it a smart surveillance system here. 
+
 ## Using USB Camera/Webcam with Home Assistant 
 
 This article explains how you can connect a USB based camera module to your Raspberry Pi, and bring in motion sensing capabilities/real-time streaming into your home automation system. The software used to interact with USB camera is `motion`. The `motion` program has so many features - including saving images when there is motion detected, run an external program indicating the same, create video clips of all recordings (by stitching all the images together), make time-lapse pictures, and also has a built-in web server for easier access to the camera via a web url...and more! There are so many advanced features that are available, unfortunately this article covers only some of it.
