@@ -3,7 +3,7 @@ layout: post
 title:  "Daemons, Creating System Services (using systemd)"
 author: skalavala
 categories: [ systemd, RPi, homeassistant, daemons, services, mqtt, homebridge, App-Daemon ]
-image: assets/images/3.jpg
+image: assets/images/systemd.jpg
 ---
 Want to run your programs as "background services" that automatically start on boot? You've come to the right place.
 
