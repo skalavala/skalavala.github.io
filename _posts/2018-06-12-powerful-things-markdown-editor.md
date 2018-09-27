@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Multi-room Audio With Raspberry Pi's and Speakers over WiFi"
+title:  "Multi-Room Audio With Raspberry Pi's and Speakers over WiFi"
 author: skalavala
 categories: [ RaspberryPi, RPi, audio, tts, snapcast, mppidy, mpd, gstreamer, media_player, homeassistant ]
 image: assets/images/16.jpg
