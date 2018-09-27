@@ -15,6 +15,14 @@ License: https://www.wowthemes.net/freebies-license/
      color: #038252;
      text-decoration:none;
 }
+
+/* Start - addition (Suresh) */
+table {
+ font-size: small
+ width: -webkit-fill-available;
+}
+/* End - addition (Suresh) */
+
  pre {
      -moz-box-sizing: border-box;
      box-sizing: border-box;
