@@ -3,7 +3,7 @@ layout: post
 title:  "Facial Recognition using Machine Learning"
 author: skalavala
 categories: [ machinebox, image_processing, facebox, tagbox, docker, homeassistant, camera ]
-image: assets/images/11.jpg
+image: assets/images/machine-learning.jpg
 featured: true
 hidden: true
 ---
