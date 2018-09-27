@@ -6,8 +6,6 @@ comments: true
 
 The following are the smart home devices I use in my Home Automation setup, and you will find corresponding configuration, and code in my [github repo](https://github.com/skalavala/smarthome).
 
-## Smart Home Devices I use for my setup
-
 <h2>Smart Lights & Switches</h2>
 <TABLE>
 <TR>
