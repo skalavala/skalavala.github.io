@@ -1,1 +1,1 @@
-[Click here to visit my web site](https://blog.kalavala.net/)
+[Click here to visit my web blog](https://blog.kalavala.net/)
