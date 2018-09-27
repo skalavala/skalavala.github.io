@@ -14,7 +14,7 @@ title: Home
     <div class="row">
         
     {% for post in site.posts %}
-
+        {{ post.url }}
         {% if post.featured == true and post.jinja != true %}
 
             {% include featuredbox.html %}
@@ -41,7 +41,7 @@ title: Home
     <div class="row listrecent">
 
         {% for post in paginator.posts if post.jinja != true %}
-
+               {{ post.url }}
                {% include postbox.html %}          
 
         {% endfor %}
