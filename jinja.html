@@ -32,6 +32,7 @@ title: Jinja
         <h2><span>All Jinja Scripts</span></h2>
     </div>
     <div class="row listrecent">
+        paginator.total_pages: {{ paginator.total_pages }}
         {% for post in paginator.posts %}
             {{ post.url }}
             {% include jinja_postbox.html %}          
