@@ -1,16 +1,59 @@
 ---
 layout: post
-title:  "The first mass-produced book to deviate from a rectilinear format"
-author: sal
-categories: [ Jekyll, tutorial ]
+title:  "Using Bluetooth on your RPi3 as a Device Tracker"
+author: skalavala
+categories: [ bluetooth, RaspberryPi, device_tracker, homeassistant, mqtt, presence-detection ]
 image: assets/images/17.jpg
 ---
-The first mass-produced book to deviate from a rectilinear format, at least in the United States, is thought to be this 1863 edition of Red Riding Hood, cut into the shape of the protagonist herself with the troublesome wolf curled at her feet. Produced by the Boston-based publisher Louis Prang, this is the first in their “Doll Series”, a set of five “die-cut” books, known also as shape books — the other titles being Robinson Crusoe, Goody Two-Shoes (also written by Red Riding Hood author Lydia Very), Cinderella, and King Winter. 
+Here is a simple way to use your Raspberry Pi's bluetooth for presence detection. You need Raspberry Pi3 in order to be able to leverage bluetooth capabilities. 
 
-An 1868 Prang catalogue would later claim that such “books in the shape of a regular paper Doll... originated with us”. 
+To get started, make sure you have python `bluetooth` libraries installed by running the following commands. Also make sure the Bluetooth is enabled on the RPi.
 
-> It would seem the claim could also extend to die cut books in general, as we can’t find anything sooner, but do let us know in the comments if you have further light to shed on this! Such books are, of course, still popular in children’s publishing today, though the die cutting is not now limited to mere outlines, as evidenced in a beautiful 2014 version of the same Little Red Riding Hood story. 
+```
+sudo apt-get install bluetooth
+sudo apt-get install python-bluez
+sudo apt-get install bluetooth libbluetooth-dev
+sudo python3 -m pip install pybluez
+```
 
-The die cut has also been employed in the non-juvenile sphere as well, a recent example being Jonathan Safran Foer’s ambitious Tree of Codes. 
+After running the above commands one after another, you should be able to run `python3` command line and be able to inport `bluetooth` package.
 
-As for this particular rendition of Charles Perrault’s classic tale, the text and design is by Lydia Very (1823-1901), sister of Transcendentalist poet Jones Very. The gruesome ending of the original - which sees Little Red Riding Hood being gobbled up as well as her grandmother - is avoided here, the gore giving way to the less bloody aims of the morality tale, and the lesson that one should not disobey one’s mother.
+The following is the python program that checks for statuc change every 15 seconds, and if there is any change, it publishes the message to the MQTT topic.
+
+Have an MQTT `binary_sensor` in Home Assistant and use this as just another data set for your device trackers.
+
+```
+#!/usr/bin/python
+import bluetooth
+from time import sleep
+import paho.mqtt.client as mqtt
+import paho.mqtt.publish as publish
+
+phones = [
+    {'name': 'person1', 'state': 'not home', 'mac': '<mac address>'}
+    {'name': 'person2', 'state': 'not home', 'mac': '<mac address>'}
+]
+
+client = mqtt.Client("hass-client")
+client.tls_set('/home/pi/certs/ca-certificates.crt')
+client.username_pw_set('<username>', '<password>')
+client.connect('<mqtt broker>', 8883)
+client.loop_start()
+
+while True:
+    for phone in phones:
+        key = "bluetooth/presence/" + phone['name']
+        result = bluetooth.lookup_name(phone['mac'], timeout=3)
+        if result != None:
+            detected_state = 'home'
+        else:
+            detected_state = 'not home'
+
+        if phone['state'] != detected_state:
+            phone['state'] = detected_state
+            client.publish(key, detected_state, retain=False)
+    sleep(15)
+
+client.disconnect()
+```
+Thanks to <a target="_blank" href="https://github.com/b10m">@B10m</a> for providing this tip!
