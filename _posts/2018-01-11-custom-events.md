@@ -4,8 +4,6 @@ title:  "Custom Events in Home Assistant"
 author: skalavala
 categories: [ homeassistant, event ]
 image: assets/images/12.jpg
-featured: false
-hidden: true
 ---
 
 Looking for a quick and easy way to fire custom events and subscribe to them in Home Assistant? Check out the following code...
