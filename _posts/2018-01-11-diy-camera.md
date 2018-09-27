@@ -3,7 +3,7 @@ layout: post
 title:  "DIY Camera with Raspberry PI & WebCam"
 author: skalavala
 categories: [ camera, diy, webcam, usbcam, homeassistant, motion, jpeg, binary_sensor, mqtt, raspberrypi, Rpi ]
-image: assets/images/12.jpg
+image: assets/images/diy-camera.jpg
 featured: true
 hidden: true
 ---
