@@ -17,10 +17,12 @@ License: https://www.wowthemes.net/freebies-license/
 }
 
 /* Start - addition (Suresh) */
+
 table {
- font-size: small
+ font-size: small;
  width: -webkit-fill-available;
 }
+
 /* End - addition (Suresh) */
 
  pre {
