@@ -2,7 +2,7 @@
 layout: post
 title:  "Using Bluetooth on your RPi3 as a Device Tracker"
 author: skalavala
-categories: [ bluetooth, RaspberryPi, device_tracker, homeassistant, mqtt, presence-detection ]
+categories: [ bluetooth, raspberrypi, device_tracker, homeassistant, mqtt, presence-detection ]
 image: assets/images/17.jpg
 ---
 Here is a simple way to use your Raspberry Pi's bluetooth for presence detection. You need Raspberry Pi3 in order to be able to leverage bluetooth capabilities. 
