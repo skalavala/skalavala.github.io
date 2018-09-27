@@ -12,17 +12,11 @@ title: Home
         <h2><span>Featured Ramblings</span></h2>
     </div>
     <div class="row">
-        
-    {% for post in site.posts %}
-        {{ post.url }}
-        {% if post.featured == true and post.jinja != true %}
-
-            {% include featuredbox.html %}
-
-        {% endif %}
-
-    {% endfor %}
-        
+        {% for post in site.posts %}
+            {% if post.featured == true and post.jinja != true %}
+                {% include featuredbox.html %}
+            {% endif %}
+        {% endfor %}
     </div>
 </section>
 
@@ -39,13 +33,10 @@ title: Home
     </div>
     
     <div class="row listrecent">
-
-        {% for post in paginator.posts if post.jinja != true %}
-               {{ post.url }}
-               {% include postbox.html %}          
-
+        {% for post in paginator.posts %}
+               Post.jinja: {{ post.jinja }}
+               {% include postbox.html %}
         {% endfor %}
-        
     </div>
     
 </section>
