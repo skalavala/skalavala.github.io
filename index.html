@@ -15,7 +15,7 @@ title: Home
         
     {% for post in site.posts %}
 
-        {% if post.featured == true %}
+        {% if post.featured == true and post.jinja != true %}
 
             {% include featuredbox.html %}
 
@@ -40,7 +40,7 @@ title: Home
     
     <div class="row listrecent">
 
-        {% for post in paginator.posts %}
+        {% for post in paginator.posts if post.jinja != true %}
 
                {% include postbox.html %}          
 
