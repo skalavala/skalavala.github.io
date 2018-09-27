@@ -3,7 +3,8 @@ layout: default
 title: Home
 ---
 
-{% if page.url == "/" %}
+{{ page.url }}
+{% if page.url == "/jinja" %}
 
 <!-- Featured
 ================================================== -->
@@ -16,11 +17,8 @@ title: Home
     {% for post in site.posts %}
        {{ post.url }}
         {% if post.featured == true %}
-
             {% include jinja_featuredbox.html %}
-
         {% endif %}
-
     {% endfor %}
         
     </div>
@@ -39,15 +37,11 @@ title: Home
     </div>
     
     <div class="row listrecent">
-
         {% for post in paginator.posts if post.jinja == true %}
- {{ post.url }}
-               {% include jinja_postbox.html %}          
-
+            {{ post.url }}
+            {% include jinja_postbox.html %}          
         {% endfor %}
-        
     </div>
-    
 </section>
 
 <!-- Pagination
