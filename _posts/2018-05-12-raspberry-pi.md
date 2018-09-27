@@ -3,7 +3,7 @@ layout: post
 title:  "Raspberry Pi Basic Setup"
 author: skalavala
 categories: [ RaspberryPi ]
-image: assets/images/2.jpg
+image: assets/images/raspberry-pi.jpg
 ---
 Got a new Raspberry Pi? Here is how you go about setting it up. Just the basics, but all the necessary stuff.
 
