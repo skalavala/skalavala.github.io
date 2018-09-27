@@ -3,7 +3,7 @@ layout: post
 title:  "MQTT Cheat Sheet"
 author: skalavala
 categories: [ mqtt ]
-image: assets/images/15.jpg
+image: assets/images/mqtt.jpg
 ---
 As the title suggests, a bunch of MQTT commands that will come to your rescue when needed.
 
