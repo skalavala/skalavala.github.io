@@ -3,7 +3,7 @@ layout: post
 title:  "Upgrading to Python 3.6 in venv"
 author: skalavala
 categories: [ raspberrypi, python ]
-image: assets/images/9.jpg
+image: assets/images/python.png
 ---
 Do you have a Raspberry Pi/Ubuntu that is running an older version of python and you want to upgrade python version?
 
