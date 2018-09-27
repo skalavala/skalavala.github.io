@@ -34,11 +34,12 @@ title: Home
     
     <div class="row listrecent">
         {% for post in paginator.posts %}
-               Post.jinja: {{ post.jinja }}
-               {% include postbox.html %}
+            {% if post.jinja != true %}
+                {% include postbox.html %}
+            {% endif %}
         {% endfor %}
     </div>
-    
+
 </section>
 
 <!-- Pagination
