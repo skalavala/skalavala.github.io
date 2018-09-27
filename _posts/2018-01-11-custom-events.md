@@ -4,7 +4,7 @@ title:  "Custom Events in Home Assistant"
 author: skalavala
 categories: [ homeassistant, event ]
 image: assets/images/12.jpg
-featured: true
+featured: false
 hidden: true
 ---
 
