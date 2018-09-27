@@ -5,6 +5,8 @@ author: skalavala
 categories: [ jinja ]
 image: assets/images/jinja.png
 jinja: true
+featured: true
+hidden: true
 ---
 
 Here is a jinja macro to calculate humidex given a temperature and humidity values. 
