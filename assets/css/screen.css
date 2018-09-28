@@ -269,6 +269,7 @@ table {
  .article-post p,.article-post blockquote {
      margin:0 0 1.5rem 0;
      text-align: justify; /* Added by Suresh */
+     font-size: 0.8em;    /* default font is too big for me */
 }
  .featured-image {
      display:block;
