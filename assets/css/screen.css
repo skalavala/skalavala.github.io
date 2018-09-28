@@ -272,6 +272,8 @@ table {
 }
  .featured-image {
      display:block;
+     margin-left: auto;  /* added by Suresh, center align image */
+     margin-right: auto; /* added by Suresh, center align image */
      margin-bottom:1.5rem;
 }
  .share {
