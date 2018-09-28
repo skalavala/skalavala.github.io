@@ -268,6 +268,7 @@ table {
 }
  .article-post p,.article-post blockquote {
      margin:0 0 1.5rem 0;
+     text-align: justify; /* Added by Suresh */
 }
  .featured-image {
      display:block;
