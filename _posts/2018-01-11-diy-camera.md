@@ -41,7 +41,7 @@ After the installation, you need make a few modifications to the settings, and t
 *    Change `stream_localhost` to OFF.
 *    Change `webcontrol_localhost` to OFF.
 *    Set `quality` to 100.
-*    Set `width` & `height` to 640 & 480.
+*    Set `width` & `height` to 1280 & 720.
 *    Set `pre_capture` to 2.
 *    Set `post_capture` to 5.
 *    set `target_directory` to the location of your choice - I use `/home/pi/Pictures`
