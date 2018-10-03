@@ -46,7 +46,7 @@ After the installation, you need make a few modifications to the settings, and t
 *    Set `post_capture` to 5.
 *    set `target_directory` to the location of your choice - I use `/home/pi/Pictures`
 
-Save and exit the file. By the way, you can change the resolution to what ever you need depending on your camera's maximum supported resolution.
+Save and exit the file. By the way, you can change the resolution to what ever you need depending on your camera's maximum supported resolution. Here is a copy of my `motion.config` for your reference: [click here to view my motion.conf file](https://raw.githubusercontent.com/skalavala/skalavala.github.io/master/_data/motion.conf) 
 
 After making changes, you also need to make changes to one more file. Type in the command `sudo nano /etc/default/motion` and press enter.
 
