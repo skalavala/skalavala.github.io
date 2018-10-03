@@ -219,6 +219,20 @@ automation:
 ```
 Save the changes, and restart Home Assistant. That should show you a binary sensor on you dashboard, that will change its status whenever the camera detects motion. 
 
+## Clearing Files
+The `motion` program by default saves all the images. You can change the setting `output_pictures on` in the config file. If not, you can write a simple script that runs on a fixed interval that clears all the images that the program stored.
+
+I use a simple script (below) that I schedule a `cron` job `*/5 * * * * /home/pi/delete_pics.sh` to run on a fixed interval to clear disk space.
+
+```
+#!/bin/bash
+fileCount="$(ls -1 /home/pi/Pictures | wc -l)"
+if [ $fileCount -gt 100 ]
+then
+sudo rm -r /home/pi/Pictures/*.*
+fi
+```
+
 ## Troubleshooting
 
 There are many places where things can go wrong, please be careful in ensuring you have the software installed and configured properly. Also make sure the `motion` program that rung under `motion` user has access to the folders, paths, files. 
