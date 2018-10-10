@@ -105,3 +105,6 @@ for /F %%x in ('dir /B/D %localdir%') do (
 
 echo Done processing pictures.
 ```
+## Note (updpate October, 2018)
+
+Machinebox recently announced that they support saving the state for free subscription as well. Once you train the faces, you do not need to re-train after restart.
