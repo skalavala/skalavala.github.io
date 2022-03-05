@@ -277,3 +277,9 @@ find -type f -exec du -Sh {} + | sort -rh | head -n 5
 OR
 # find /home/<your_path_here>/ -type f -printf "%s %p\n" | sort -rn | head -n 5
 ```
+
+## Check the last boot
+
+```
+who -a | sed -En '/system boot/{:a N;/run-level/!ba;s/19.+level [0-9]\s+//p}'
+```
