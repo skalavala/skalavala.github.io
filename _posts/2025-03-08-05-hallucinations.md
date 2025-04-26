@@ -5,7 +5,7 @@ author: skalavala
 image: assets/images/hallucination.png
 categories: [ RAG, AI, hallucination ]
 tags: [ rag, llm, hallucination ]
-featured: true
+featured: false
 hidden: false
 ---
 
