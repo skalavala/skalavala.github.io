@@ -28,9 +28,10 @@ The end goal for RAG is ALWAYS about getting more relevant responses. In order t
 
 Here are the steps we discussed above:
 
-```
-Document Ingestion → Chunking → Document Embedding → Indexing → Query Input → Query Embedding → Document Retrieval → Ranking → Context Creation → LLM Generation → Post-Processing (optional) → Response Output.
-```
+<center>
+<img src="{{ site.baseurl }}/assets/images/rag-steps.png" alt="Traditonal RAG Steps"/>
+</center>
+<br/>
 
 In the Multi-Stage RAG implementation, instead of sequentially going through each step without quality inspection, we take a step back and evaluate before moving to the next step. We may repeat some steps until we are satisfied with one step before moving to the next step.
 
