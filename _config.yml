@@ -1,0 +1,65 @@
+# Site
+name: "AI Shenanigans"
+title: "AI Shenanigans"
+description: "Suresh's personal ramblings on AI, ML, and more."
+logo: "assets/images/logo.png"
+favicon: "assets/images/logo.png"
+baseurl: /
+#baseurl: /mediumish-theme-jekyll
+google_analytics: "UA-126608068-1"
+disqus: "https-blog-kalavala-net"
+#mailchimp-list: "https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b"
+mailchimp-list: "https://mailchimp.url"
+include: ["_pages"]
+permalink: /:title/
+
+# Authors
+authors:
+  skalavala:
+    name: Suresh
+    display_name: Suresh
+    gravatar: e2b9725b45180707eb3a9083ba8cc40c
+    email: notmyemail@gmail.com
+    web: https://github.com/skalavala
+    #twitter: https://twitter.com/
+    #description: "skalavala"
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: "/category/:name/"
+
+# Pagination
+paginate: 6
+paginate_path: /page:num/
+
+# Other
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+# Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
+adsense: "disabled"
+adsense-data-ad-client: "ca-pub-3412143450191416"
+adsense-data-ad-slot: "1363087678"
+
+# Lazy Images ("enabled" or "disabled")
+lazyimages: "disabled"
+
+exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
