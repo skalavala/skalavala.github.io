@@ -9,8 +9,6 @@ featured: true
 hidden: false
 ---
 
-# Introduction
-
 In the fast-moving world of large language models, it’s rare to see a release that catches people off guard. DeepSeek did it. Kimi K2 just did it again.
 
 Kimi K2 is a trillion parameter Mixture of Experts (MoE) model released by Moonshot AI (A chinese startup, backed by Alibaba). It showed up on Hugging Face this week and is already being benchmarked, quantified, and tested by researchers and developers worldwide.
@@ -100,13 +98,13 @@ If you are a develoer, and use LLMs for coding help, I'd highly encourage you to
 
 ### SOme useful links:
 
-Huggingface link: https://huggingface.co/moonshotai/Kimi-K2-Instruct
+[Huggingface link: ](https://huggingface.co/moonshotai/Kimi-K2-Instruct)
 
-To sign up, go here: https://platform.moonshot.ai/console
+[To sign up, go here: ](https://platform.moonshot.ai/console)
 
-You can try it here for free: https://www.kimi.com/
+[You can try it here for free: ](https://www.kimi.com/)
 
-Docs are here: https://platform.moonshot.ai/docs/introduction#text-generation-model
+[Docs are here: ](ttps://platform.moonshot.ai/docs/introduction#text-generation-model)
 
-Unsloth doc: https://docs.unsloth.ai/basics/kimi-k2-how-to-run-locally
+[Unsloth doc: ](https://docs.unsloth.ai/basics/kimi-k2-how-to-run-locally)
 
